@@ -1,5 +1,5 @@
 export const CONFIG = {
-  username: 'sho', password: 'sho+', name: 'Shameen', birthday: '2026-07-11',
+  username: '', password: 'PAMMI', name: 'Shameen', birthday: '2026-07-11',
   music: new URL('../assets/music.mp3', import.meta.url).href,
   media: {
     sunflowerGif: '',
