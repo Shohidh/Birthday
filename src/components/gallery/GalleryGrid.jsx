@@ -1,0 +1,1 @@
+import { CONFIG } from '../../config/config'; import MemoryCard from './MemoryCard'; export default function GalleryGrid({open}){return <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">{CONFIG.photos.map((p,i)=><MemoryCard key={p.src} photo={p} onClick={()=>open(i)}/>)}</div>}

@@ -1,0 +1,2 @@
+import { motion } from 'framer-motion';
+export default function Butterflies() { return <div aria-hidden="true" className="absolute inset-0 overflow-hidden">{[...Array(5)].map((_,i)=><motion.span key={i} className="absolute text-xl" style={{left:`${12+i*19}%`,top:`${30+(i%3)*17}%`}} animate={{x:[0,45,-30,0],y:[0,-34,12,0],rotate:[-10,20,-20,-10]}} transition={{duration:5+i,repeat:Infinity,ease:'easeInOut'}}>{i%2?'🦋':'🪻'}</motion.span>)}</div>; }

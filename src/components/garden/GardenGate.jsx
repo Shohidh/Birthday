@@ -1,0 +1,1 @@
+export default function GardenGate(){return <div aria-hidden="true" className="absolute bottom-0 left-1/2 h-28 w-40 -translate-x-1/2 rounded-t-[5rem] border-x-[12px] border-t-[12px] border-[#895e31] bg-[#6cae45]/30"/>}

@@ -1,0 +1,2 @@
+import { motion } from 'framer-motion';
+export default function FloatingPetals({ count = 13 }) { return <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">{Array.from({ length: count }, (_, i) => <motion.i key={i} className="petal" style={{ left: `${(i * 23) % 100}%`, top: `${-10 - i * 9}%` }} animate={{ y: ['0vh', '115vh'], x: [0, i % 2 ? 80 : -65], rotate: [0, 280] }} transition={{ duration: 8 + (i % 5), repeat: Infinity, delay: i * .45, ease: 'linear' }} />)}</div>; }

@@ -1,0 +1,1 @@
+import { useEffect } from 'react'; import confetti from 'canvas-confetti'; export default function Fireworks(){useEffect(()=>{const t=setInterval(()=>confetti({particleCount:45,spread:70,startVelocity:35,origin:{x:Math.random(),y:Math.random()*.45}}),700);return()=>clearInterval(t)},[]);return null}

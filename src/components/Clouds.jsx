@@ -1,0 +1,2 @@
+import { motion } from 'framer-motion';
+export default function Clouds() { return <div aria-hidden="true">{[[7,8,130,18],[16,76,92,24],[28,44,110,20],[43,4,78,22],[57,62,180,16],[74,25,105,26],[86,82,70,19]].map(([top,left,width,d],i)=><motion.div key={i} className="cloud" style={{top:`${top}%`,left:`${left}%`,width,opacity:i%2?.72:.9,transform:`scale(${i%3===0?1.15:1})`}} animate={{x:[0, i%2?-140:140]}} transition={{duration:d,repeat:Infinity,repeatType:'mirror',ease:'linear'}} />)}</div>; }

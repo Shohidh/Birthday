@@ -1,0 +1,2 @@
+import { CONFIG } from '../config/config';
+export default function Navbar(){return <nav className="fixed top-0 z-40 flex w-full items-center justify-between bg-white/65 px-5 py-3 backdrop-blur-lg md:px-10"><a href="#top" className="serif text-xl font-bold">{CONFIG.name}'s Garden</a><div className="hidden gap-5 text-sm font-medium md:flex"><a href="#memories">Memories</a><a href="#letter">A Letter</a><a href="#cake">Make a wish</a></div></nav>}
